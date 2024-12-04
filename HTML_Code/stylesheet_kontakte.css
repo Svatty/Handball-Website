@@ -17,7 +17,6 @@
 .topnav:hover{
 	box-shadow: 0px 10px 20px #2c2e3e; 
 }
-
 ul.buttons li{
 	margin-right: 50px;
 	margin-top: 10px;
@@ -43,32 +42,6 @@ a.impressum_link{
 a.kontakte_link{
 	color: #ee2b47;
 }
-
-.side_navbar{
-	margin-left: -160px;
-	float: left;
-	
-	background-color: #2c2e3e;
-	
-	width: 150px;
-	height: 660px;
-}
-
-@keyframes slideFromLeft {
-	0%{
-		transform: translateX(-100%);
-		opacity: 0;
-	}
-	100% {
-		transform: translateX(0);
-		opacity: 1;
-	}
-}
-
-.sprungwurf-img:hover {
-	animation: slideFromLeft 1s ease-out forwards;
-}
-
 
 .WebsiteTitle{
 	margin-left: 100px;
