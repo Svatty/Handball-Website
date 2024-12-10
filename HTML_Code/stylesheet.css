@@ -4,25 +4,57 @@
 	float: left;
 }
 .topnav {
-	margin-top: -5px;
-	margin-left: -15px;
-	
-	width: 1550px;
+  margin: -10px;
+
 	height: 70px;
+
+  overflow: hidden;
 	
 	background-color: #2c2e3e;
-	
-	overflow: hidden;
+
+  transition-duration: 0.125s;
 }
 .topnav:hover{
 	box-shadow: 0px 10px 20px #2c2e3e; 
+}
+
+#bars{
+  margin-left: 10px;
+  margin-top: 10px;
+  float: left;
+
+  height: 50px;
+  width: 35px;
+}
+#side_navbar{
+	margin-left: -160px;
+	float: left;
+	
+	background-color: #2c2e3e;
+
+	width: 200px;
+  height: 100%;
+}
+
+#bars:hover , .side_navbar{
+  margin-left: 200px;
+
+  pointer-events: auto;
+}
+/*#fa-solid:hover #side_navbar{
+  margin-left: -10px;
+}
+*/
+#links{
+  color: red;
 }
 
 ul.buttons li{
 	margin-right: 50px;
 	margin-top: 10px;
 
-	display: inline;
+  display: flex;
+  justify-content: flex-end;
 	
 	color: #ee2b47;
  
@@ -42,16 +74,6 @@ a.impressum_link{
 }
 a.kontakte_link{
 	color: #ee2b47;
-}
-
-.side_navbar{
-	margin-left: -160px;
-	float: left;
-	
-	background-color: #2c2e3e;
-	
-	width: 150px;
-	height: 660px;
 }
 
 @keyframes slideFromLeft {
@@ -81,5 +103,7 @@ h2{
 	color: #ee2b47;
 }
 body{
+  overflow: hidden;	
+  height: 100vh;
 	background-color: #34374c;
 }
