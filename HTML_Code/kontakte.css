@@ -145,25 +145,28 @@ footer{
 .penis{
 	color: #34374c;
 }
-.vorstellung{
+
+.kontakte{
   height: 75vh;
-  width: 85vw;
-  margin: 5em;
+  width: 60vw;
+  padding: 5em;
 }
-#juko{
-  height: 30em;
-  width: 30em;
+#kontakte_titel{
+  margin: 0;
   float: left;
-}
-.vorstellung_titel{
-  float: left;
-  margin-left: 1em;
   font-size: 7.5em;
+  width: auto;
 }
-.vorstellung_text{
-  font-size: 1.25em;
+#sviat{
   float: left;
-  margin-left: 5em;
-  width: 50em;
+  margin-left: 10em; 
+  width: 20em;
+  height: 20em;
+}
+#nummer{
+  position: absolute;
+  font-size: 1.5em;
+  float: left;
+  top: 11em;
   color: #F6F6F6;
 }
