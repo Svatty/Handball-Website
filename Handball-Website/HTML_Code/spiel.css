@@ -1,0 +1,394 @@
+body{
+  height: 100vh;
+  overflow-x: hidden;
+	background-color: #34374c;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+
+  margin: -10px;
+
+	height: 70px;
+
+  overflow: hidden;
+	
+	background-color: #2c2e3e;
+
+  z-index: 1;
+
+  transition-duration: 0.125s;
+}
+
+.topnav:hover{
+	box-shadow: 0px 10px 20px #2c2e3e; 
+}
+
+/*Bars*/
+.bars{
+  visibility: hidden;
+}
+.fa-bars{
+  padding: 10px 5px;
+	visibility: visible;
+
+  font-size: 3em;
+}
+
+/*Logo*/
+.sprungwurf-img{
+	margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1{
+  color: #ee2b47;
+}
+
+.navbar_list, .left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.navbar_list li, .left li{
+  list-style-type: none;
+	color: #ee2b47;
+}
+
+/*Links to other pages*/
+a.impressum_link, a.kontakte_link{
+	color: #ee2b47;
+  padding: 1em;
+}
+
+/*Sidenav bar*/
+#side_navbar{
+  top: 0;
+  left: 0;
+	position: absolute;
+	
+	float: left;
+
+  display: none;
+
+	background-color: #2c2e3e;
+
+  z-index: 3;
+
+	width: 15em;
+	height: 100%;
+}
+
+ul.links_sidenav{
+  position: inherit;
+  color: #F6F6F6;
+  margin-top: 3em;
+  height: 10vh;
+
+  list-style-type: none;
+}
+a.spiel, a.regeln, a.geschichte, a.hall_of_fame, a.ikonen, a.quellen{
+  display: block;
+  color: #F6F6F6;
+  margin-bottom: 2em;
+}
+
+/*x mark*/
+#x-mark{
+  position: inherit;
+  
+  right: 0;
+  
+  margin: 1em;
+  
+  visibility: hidden;
+}
+.fa-xmark{
+  font-size: 2em;
+
+  visibility: visible;
+}
+
+/*shadow when sidenav open*/
+#overlay{
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  display: none;
+  
+  background-color: rgba(0,0,0,0.5);
+  
+  z-index: 2;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+
+h2{
+	color: #ee2b47;
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  margin: 1em;
+  color: #34374c;
+}
+.penis{
+	color: #34374c;
+}
+.einfuhrung{
+  width: 100%;
+  float: left;
+}
+.einfuhrung_titel{
+  margin: 1em;
+  float: left;
+  font-size: 7.5em;
+  width: auto;
+}
+.einfuhrung_text{
+  width: 30em;
+  height: 2em;
+  position: absolute;
+  font-size: 1.5em;
+  float: left;
+  margin: 5em;
+  color: #F6F6F6;
+  top: 8.5em;
+}
+
+.grundlagen{
+  margin-top: 10em;
+  width: 100%;
+  float: right;
+}
+.grundlagen_titel{
+  float: right;
+  width: auto;
+  margin: 0;
+  margin-right: 1em;
+  font-size: 7.5em;
+}
+.grundlagen_text{
+  width: 30em;
+  height: 2em;
+  font-size: 1.5em;
+  float: right;
+  color: #F6F6F6;
+  margin-right: 5em;
+}
+ul.grundlagen_list{
+  width: 30em;
+  height: 2em;
+  font-size: 1.5em;
+  color: #F6F6F6;
+  float: right;
+  margin-right: 4em;
+}
+.slider{
+  float: left;
+  margin-left: 7.5em;
+}
+.slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.selector {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.selector::-webkit-scrollbar {
+	display: none;
+}
+
+.selector img {
+	flex: 1 0 100%;
+	object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: black;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+.spielzuge{
+  margin-top: 10em;
+  width: 100%;
+  float: right;
+}
+.spielzuge_titel{
+  margin: 0;
+  margin-left: 1em;
+  float: left;
+  font-size: 7.5em;
+  width: auto;
+}
+.spielzuge_text{
+  position: absolute;
+  width: 30em;
+  height: 2em;
+  font-size: 1.5em;
+  float: left;
+  margin: 5em;
+  margin-top:7.5em;
+  color: #F6F6F6;
+}
+
+.sz_slider{
+  float: right;
+  margin-right: 7.5em;
+}
+.sz_slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.sz_selector {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sz_selector::-webkit-scrollbar {
+	display: none;
+}
+
+.sz_selector img {
+	flex: 1 0 100%;
+	object-fit: cover;
+}
+
+.sz_slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.sz_slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: black;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.sz_slider-nav a:hover {
+	opacity: 1;
+}
+
+.abwehr{
+  margin-top: 10em;
+  width: 100%;
+  height: 30em;
+  float: right;
+}
+.abwehr_titel{
+  float: left;
+  width: auto;
+  margin: 0;
+  margin-left: 1em;
+  font-size: 7.5em;
+}
+.abwehr_text{
+  width: 30em;
+  height: 2em;
+  font-size: 1.5em;
+  color: #F6F6F6;
+  margin: 0;
+  margin-left: 5em;
+  float: left;
+}
+.ab_slider{
+  float: left;
+  margin: 0;
+  margin-left: 7.5em;
+}
+.ab_slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.ab_selector {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.ab_selector::-webkit-scrollbar {
+	display: none;
+}
+
+.ab_selector img {
+	flex: 1 0 100%;
+	object-fit: cover;
+}
+
+.ab_slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.ab_slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: black;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.ab_slider-nav a:hover {
+	opacity: 1;
+}

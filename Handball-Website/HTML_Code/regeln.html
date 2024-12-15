@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handball</title>
+	  <link rel="stylesheet" type="text/css" href="regeln.css">
+	  <script src="https://kit.fontawesome.com/745f53227a.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+  	<script src="script.js" defer></script>
+
+    <nav class="topnav">
+      
+      <ul class="left">
+        <li>
+        <button onclick="open_sidenav()" class="bars">
+          <i class="fa-solid fa-bars"></i>
+        </button></li>
+        <li>
+        <a href="index.html">
+          <img src="Handball_Sprungwurf_Weiß.png" alt="Spungwurf" width="65" height="65" class="sprungwurf-img">
+        </a>
+        </li>
+        <li>
+        <h1>Handball: Spiel und Regeln</h1>
+        </li>
+      </ul>
+      
+			    <ul class="navbar_list">
+			      <div id="contact">
+			        <li><a class="kontakte_link" href="kontakte.html">Kontakt</a></li>
+			      </div>
+			      <div id="impressum">
+			        <li><a class="impressum_link" href="impressum.html">Impressum</a></li>
+			      </div>
+			    </ul>
+
+		</nav>
+
+    <div id="overlay"></div>
+
+		<div id="side_navbar">
+      <button onclick="close_sidenav()" id="x-mark">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+        <ul class="links_sidenav">
+          <li><a class="spiel" href="spiel.html"><i class="fa-solid fa-futbol"></i> Spiel</a></li>
+          <li><a class="regeln" href="regeln.html"><i class="fa-regular fa-hand-peace"></i></i> Regeln</a></li>
+          <li><a class="geschichte"href="geschichte.html"><i class="fa-solid fa-book-open"></i> Geschichte</a></li>
+          <li><a class="hall_of_fame" href="hall_of_fame.html"><i class="fa-solid fa-trophy"></i> Hall of Fame</a></li>
+          <li><a class="ikonen" href="ikonen.html"><i class="fa-solid fa-star"></i> Ikonen</a></li>
+          <li><a class="quellen" href="quellen.html"><i class="fa-solid fa-globe"></i>  Einzelnachweise</a></li>
+        </ul>
+        <footer><a class="penis" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">nicht anfassen</a></footer>
+    </div>
+
+    <div class="regeln_site">
+      <h1 class="regeln_titel">Basic Regeln</h1>
+      <ul class="regeln_text">
+        <li>Tor ist 2 Meter hoch und 3 Meter breit und befindet sich an den beiden Enden des Spielfelds.</li>
+        <li>
+          Der Torraum ist ein Halbkreisförmiger bereich in welchem sich nur der Torwart befinden darf. Man darf aber als Feldspieler
+          in den Kreis reinspringen, muss jedoch den Ball werfen bevor man wieder landet. Wenn ein gegnerischer Spieler den Kreis
+          betritt dann bekommt die Abwehr den Ball.
+        </li>
+        <li>
+          Eine Handballmannschaft besteht aus 14 Spielern: 6 Feldspielern, 1 Torwart und 7 Ersatzspielern. Wechsel sind unbegrenzt möglich.
+          Der Torwart kann sogar als Feldspieler agieren, muss dann jedoch ein Feldspielertrikot tragen, und ein Feldspieler im Tor benötigt ein Torwarttrikot.
+        </li>
+        <li>Ein Spiel besteht aus 2 Halbzeiten, welche abhängig von der Jugend zwischen 15 und 30 Minuten lang sind, welche getrennt werden mit einer 10 Minuten Pause.</li>
+        <li>Spieler dürfen den Ball mit dem gesamten Oberkörper bis bis zu den Knien berühren</li>
+        <li>
+          Ein Spieler darf maximal 3 Schritte mit dem Ball machen. Wenn er jedoch anfängt dabei zu Prellen hat er kein Schrittelimit. Wenn er aber wieder aufhört, darf er nur noch 3 schritte machen,
+          den Ball 3 Sekunden halten und nicht nochmal anfangen zu Prellen, da es ansonsten ein Foul ist und der Gegner den Ball bekommt.
+        </li>
+        <li>
+          Körperkontakt ist sowohl für die Abwehr als auch für den Angriff erlaubt, solange dieser regelkonform ist. Mann darf z.B.: nicht als Angreifer in den Abwehspieler reinrennen, 
+          jedoch darf man aber auch als Abwehrspieler nicht, wenn den Angreifer an einem vorbeigelaufen ist, diesen von Hinten festhalten.
+        </li>
+        <li>Damit diese Regeln befolgt werden sind, abhängig von der Jugend, 1 bis 2 Schiedsrichter da.</li>
+      </ul>
+      <img src="Schiedrichter_Handball.jpg" id="schiri_bild">
+    </div>
+
+    <div class="bestrafungen">
+      <img src="Karten.jpeg" class="karten">
+      <h1 class="bestrafungen_titel">Bestrafungen</h1>
+      <p class="bestrafungen_text">Im Handball gibt es verschiedene Bestrafungen. Diese reichen von einer Verwarung bis zu einer blauen Karte. Die Bestrafung ist abhängig vom Regelbruch.<p>
+      <ul class="bestrafungen_list">
+        <li>Gelbe Karte(Verwarnung): Bei vergehen gegen den Körper</li>
+        <li>2-Minuten: Bei groben Regelverstoß. 2-Minuten ist eine Zeitstrafe in welcher der bestrafte Spieler für 2-Minuten vom Spiel aussetzen muss. 2 Gelbe Karten ergeben eine 2-Minuten Strafe.</li>
+        <li>
+          Rote Karte(Disqualifikation): Bei besonders groben Fouls, bei denen die Gesundheit des Gegenspielers gefährdet ist. Bei einer Disqualifikation muss der Spieler vom Feld und 
+          seine Manschaft ist für 2 Minuten in Unterzahl. 3 2-Minuten-Strafen ergeben 1 rote Karte.
+        </li>
+        <li>
+          Blaue Karte(Hinausstellung): Bei extremer Unsporttlichkeit wie: Schiedsrichter beleidigen, Absichtliche Körperverletzung usw. Als Folge kann man für mehrere Spiele gesperrt werden.
+        </li>
+        <li>
+          Freiwurf/Ballwechsel: Bei schritten, doppelt(erneutes prellen nachdem man aufgehört hat) und Regelverstößen von der Angriffsmanschaft.
+        </li>
+        <li>
+          7-Meter: Wenn einem Angreifer eine klare Torchance genommen wird durch ein Foul oder etwas anderem, bekommt die Angreifende Manschaft einen 7-Meter. Ein 7-Meter ist wie ein 11-Meter beim Fußball. 
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
